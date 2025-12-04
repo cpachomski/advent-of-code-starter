@@ -1,4 +1,4 @@
-# Advent of Code 2025
+# Advent of Code Starter
 
 Small personal workspace for solving [Advent of Code](https://adventofcode.com/) puzzles.
 
