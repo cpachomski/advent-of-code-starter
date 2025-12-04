@@ -16,12 +16,6 @@ def load(day: int) -> Path:
     return ROOT / day_str / INPUT_FILE_NAME
 
 
-def list_days():
-    print("\n")
-    for d in sorted(ROOT.glob("day*/")):
-        print(d.name)
-
-
 def run_day(day: int):
     day_str = f"day{day:02d}"
     module = import_module(f"{day_str}.solution")
@@ -43,8 +37,6 @@ def main():
     parser = argparse.ArgumentParser(description="Advent of Code runner")
     sub = parser.add_subparsers(dest="cmd")
 
-    sub.add_parser("list", help="List days")
-
     r = sub.add_parser("run", help="Run a specific day")
     r.add_argument("day", type=int)
 
@@ -58,9 +50,7 @@ def main():
     b.add_argument("day", type=int)
 
     args = parser.parse_args()
-    if args.cmd == "list":
-        list_days()
-    elif args.cmd == "run":
+    if args.cmd == "run":
         run_day(args.day)
     elif args.cmd == "test":
         test_day(args.day)
