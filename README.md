@@ -1,6 +1,6 @@
 # Advent of Code 2025
 
-Small personal workspace for solving Advent of Code 2025 puzzles.
+Small personal workspace for solving [Advent of Code](https://adventofcode.com/) puzzles.
 
 This repository contains per-day solution folders and a small CLI in `aoc/` to easily create, run, test, and benchmark each day's solution.
 
@@ -27,4 +27,4 @@ The Makefile defines a few convenient targets. The Makefile uses a variable `RUN
 - `make bench d=<N>`
   - Benchmarks the `solve()` function for a day. The benchmark helper runs the solution multiple times and prints the average runtime.
   - Example: `make bench d=1`
-  
+  `
