@@ -31,6 +31,3 @@ The Makefile defines a few convenient targets. The Makefile uses a variable `RUN
 - `make bench d=<N>`
   - Benchmarks the `solve()` function for a day. The benchmark helper runs the solution multiple times and prints the average runtime.
   - Example: `make bench d=1`
-
-
-# advent-of-code-starter
