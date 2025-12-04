@@ -7,6 +7,8 @@ This repository contains per-day solution folders and a small CLI in `aoc/` to e
 ## Setup
 
 1. Install uv: https://docs.astral.sh/uv/getting-started/installation/
+2. Run `make new d=1` to create a folder for the first puzzle.
+3. Paste the puzzle input into `day01/input.txt` and off you go.
 
 ## Makefile targets
 
